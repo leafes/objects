@@ -1,0 +1,14 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "functions that recrate object abstraction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Krynkin",
+  "license": "ISC",
+  "dependencies": {
+    "crc-32": "^1.2.2"
+  }
+}
