@@ -1,10 +1,9 @@
-import fromPairs from '../src/index.js';
+import { strict as assert } from 'assert';
 import _ from 'lodash'
-const value1 = fromPairs([['cat', 5], ['dog', 6], ['cat', 11]]);
-const answer1 = { cat: 111, dog: 6 };
+import fromPairs from '../src/index.js';
 
-if (_.isEqual(value1, answer1)) { 
-	console.log('all right'); 
-} else {
-	throw new Error(`Function works wrong!`);
-};
+
+const value1 = fromPairs([['cat', 5], ['dog', 6], ['cat', 11]]);
+const answer1 = { cat: 13, dog: 6 };
+
+assert.deepEqual(value1, answer1);
